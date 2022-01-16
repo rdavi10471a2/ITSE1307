@@ -4,6 +4,7 @@ using namespace std;
 
 #include <limits>
 
+//borrowed from https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/ 
 void ignoreLine()
 {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -19,7 +20,8 @@ void PrintMenu() {
     cout << "-------------------------------" << endl;
 
 }
-
+//borrowed and modified from https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/
+//note this does not check for the meaning of the integer to the caller whether it is in the expected range etc just that the value entered was an integer
 int  getMenuChoice() 
 {
     while (true) // Loop until user enters a valid input
@@ -40,7 +42,7 @@ int  getMenuChoice()
         {
             ignoreLine(); // remove any extraneous input
 
-            // the user can't enter a meaningless double value, so we don't need to worry about validating that
+            // the user can't enter a meaningless integer value, so we don't need to worry about validating that
             return x;
         }
     }
