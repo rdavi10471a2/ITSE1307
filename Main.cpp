@@ -20,6 +20,7 @@ void PrintMenu() {
 	cout << "1 Chapter 2 Simple demos" << endl;
 	cout << "2 Chapter 2 3 numbers single row .cpp and .h file" << endl;
     cout << "3 Chapter 3 demos" << endl ;
+    cout << "4 cin.getLine sample" << endl;
     cout << "0 to exit this app" << endl;
     cout << "-------------------------------" << endl;
 
@@ -81,6 +82,22 @@ int main()
             AccountTester AC;
             AC.RunTests();
 
+        }
+        case 4:
+        {
+            //https://www.cplusplus.com/reference/istream/istream/getline/
+            // This example illustrates how to get lines from the standard input stream(cin)
+            cout << "This example illustrates how to get lines from the standard input stream(cin)" << endl;
+            char name[256], title[256];
+            
+
+            cout << "Please, enter your name: ";
+            cin.getline(name, 256);
+
+            cout << "Please, enter your favourite movie: ";
+            cin.getline(title, 256);
+
+            cout << name << "'s favourite movie is " << title;
         }
         break;
         default:
