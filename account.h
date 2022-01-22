@@ -79,6 +79,16 @@ public:
             << account1.getBalance();
         cout << "\naccount2: " << account2.getName() << " balance is $"
             << account2.getBalance() << endl;
+
+        
+        //issue with calling the readline demo after this demo 
+        //The problem : cin >> leaves the newline character(\n) in the iostream.
+        //If getline is used after cin >> , the getline sees this newline character as leading whitespace, 
+        //thinks it is finishedand stops reading any further.
+        //so we have to clear out the stream so readline will work
+        //https://stackoverflow.com/questions/25020129/cin-ignorenumeric-limitsstreamsizemax-n
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');//clear out stream
+
         cout << "End of acount tests" << endl;
         cout << "-------------------" << endl;
     }
