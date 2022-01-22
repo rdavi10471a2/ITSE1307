@@ -1,5 +1,5 @@
 
-#define _USE_MATH_DEFINES
+#define _USE_MATH_DEFINES  //https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?view=msvc-170
 
 #include <iostream>
 #include <limits>
@@ -8,6 +8,7 @@
 #include "ex02_05.h"
 #include "fig02_01.cpp" //entire implementation is in single file should probably be .h but this shows you can also include.CPP
 #include "account.h"
+#include <cmath>  //https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?view=msvc-170
 using namespace std;
 
 
