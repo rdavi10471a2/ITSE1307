@@ -27,7 +27,7 @@ void PrintMenu() {
     cout << "3 Chapter 3 demos" << endl ;
     cout << "4 cin.getLine sample" << endl;
     cout << "5 use cmath to get the value of PI and print it out" << endl;
-    cout << "6 myzt" << endl;
+    cout << "6 While Loop Sample Sum of Squares" << endl;
     cout << "0 to exit this app" << endl;
     cout << "-------------------------------" << endl;
 
