@@ -27,6 +27,7 @@ void PrintMenu() {
     cout << "3 Chapter 3 demos" << endl ;
     cout << "4 cin.getLine sample" << endl;
     cout << "5 use cmath to get the value of PI and print it out" << endl;
+    cout << "6 myzt" << endl;
     cout << "0 to exit this app" << endl;
     cout << "-------------------------------" << endl;
 
@@ -128,6 +129,21 @@ int main()
 
         }
          break;
+        case 6:
+        {
+            unsigned int x{ 1 };
+            unsigned int total{ 0 };
+
+            while (x <= 10) {
+                int y = x * x;
+                cout << y << endl;
+                total += y;
+                ++x;
+            }
+
+            cout << "Total is " << total << endl;
+        }
+        break;
         default:
             cout << "Invalid Choice for menu" << endl; 
         }
